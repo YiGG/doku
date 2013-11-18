@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="{{ site.baseurl }}css/style.css" />
+  </head>
+  <body>
+    <header id="branding">
+      <nav id="access" role="navigation">
+        <a title="YiGG Nachrichten zum Mitmachen: Lesen - Bewerten - Schreiben" rel="home" class="logo" href="{{ site.baseurl }}"><img alt="YiGG Nachrichten zum Mitmachen: Lesen - Bewerten - Schreiben" width="90" height="53" src="{{ site.baseurl }}images/yigg_logo.png"></a>
+        <div id="main-navigation">
+          <ol>
+            <li><a title="Home" href="{{ site.baseurl }}">Home</a></li>
+            <li><a title="JavaScript button" href="{{ site.baseurl }}JavaScript_Button">JavaScript Button</a></li>
+            <li><a title="A list of YiGG plugins" href="{{ site.baseurl }}List_of_plugins">Plugins</a></li>
+          </ol>
+        </div>
+      </nav>
+    </header>
+
+    <div id="main">
+      {{ content }}
+    </div>
+
+    <footer>
+      <p>This website is in a <a href="https://github.com/yigg/doku">public git repository</a>. <a href="http://yigg.de/ueber-uns/impressum">Impressum</a></p>
+    </footer>
+  </body>
+</html>
